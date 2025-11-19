@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "set NEXT_DISABLE_TURBOPACK=1 && next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.34.5",
@@ -31,8 +32,7 @@
     "react-dom": "19.2.0",
     "react-hot-toast": "^2.6.0",
     "tailwind-merge": "^3.3.1",
-    "uploadthing": "^7.7.4",
-    "postinstall": "prisma generate"
+    "uploadthing": "^7.7.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
